@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        'max-sm': { max: '639px' }, // targets screens smaller than 640px
+      },
       colors: {
         primary: {
           50: '#eff6ff',
