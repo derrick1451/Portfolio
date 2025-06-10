@@ -3,7 +3,7 @@ import { FaMoon, FaSun } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 export default function NavBar() {
-    const [isDark, setIsDark] = useState(true);
+    const [isDark, setIsDark] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
