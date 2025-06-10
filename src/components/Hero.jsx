@@ -22,14 +22,14 @@ const Hero = () => {
     };
 
     const socialLinks = [
-        { icon: <FaTwitter />, url: 'https://twitter.com/yourusername' },
-        { icon: <FaLinkedin />, url: 'https://linkedin.com/in/yourusername' },
-        { icon: <FaMedium />, url: 'https://medium.com/@yourusername' },
-        { icon: <FaGithub />, url: 'https://github.com/yourusername' }
+        { icon: <FaTwitter />, url: 'https://x.com/DerrickHayle' },
+        { icon: <FaLinkedin />, url: 'https://www.linkedin.com/in/okongo-derrick/' },
+        { icon: <FaMedium />, url: 'https://medium.com/@haylederrick14' },
+        { icon: <FaGithub />, url: 'https://github.com/derrick1451/' }
     ];
 
     return (
-        <section className="flex border-b-8 border-gainsboro-600 rounded-bl-[80px] items-center justify-center bg-white dark:bg-gray-900 px-8 sm:px-6 max-sm:pt-16 lg:px-8">
+        <section id="home" className="flex items-center justify-center bg-white dark:bg-gray-900 px-8 sm:px-6 max-sm:pt-16 lg:px-8">
             <motion.div 
                 className="max-w-7xl mx-auto py-12 sm:py-24"
                 variants={containerVariants}
@@ -74,7 +74,7 @@ const Hero = () => {
                             <h2 className="text-sm font-semibold text-gray-700 dark:text-gray-300 tracking-wider">
                                 LET'S CONNECT
                             </h2>
-                            <div className="mt-4 flex space-x-6 sm:justify-start justify-center">
+                            <div className="mt-4 flex space-x-6 sm:justify-start">
                                 {socialLinks.map((social, index) => (
                                     <motion.a
                                         key={index}

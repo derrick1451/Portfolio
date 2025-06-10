@@ -1,7 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@layer components {
+ #root {
+  height:100vh;
+ }
+}
 @layer base {
   html {
     -webkit-tap-highlight-color: transparent;
