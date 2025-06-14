@@ -16,7 +16,8 @@ const projects = [
     category: "Frontend Development",
     description:
       "Bookstore is a web app that allows users to add a book, remove a selected book and display list of books.",
-    longDescription:"The Bookstore is a CRUD web app that lets users add (title, author), delete, and view books. Built with React/Node.js (or vanilla JS with LocalStorage), it features a clean UI with optional search/sort. Scalable for auth, APIs, or databases, it's perfect for learning full-stack development.",
+    longDescription:
+      "The Bookstore is a CRUD web app that lets users add (title, author), delete, and view books. Built with React/Node.js (or vanilla JS with LocalStorage), it features a clean UI with optional search/sort. Scalable for auth, APIs, or databases, it's perfect for learning full-stack development.",
     technologies: ["React", "CSS", "JavaScript", "React Router"],
     image: "../src/assets/bookstore.png",
     liveLink: "https://bookstore-hynh.onrender.com/",
@@ -29,9 +30,10 @@ const projects = [
     id: 2,
     title: "Todo List",
     category: "Frontend Development",
-    description: "This is a basic to-do List application. Users can Edit, Update, and Delete todos. Built with HTML,CSS, Webpack and JavaScript.",
+    description:
+      "This is a basic to-do List application. Users can Edit, Update, and Delete todos. Built with HTML,CSS, Webpack and JavaScript.",
     longDescription:
-      "Developed a collaborative task management application with drag-and-drop functionality, real-time updates using WebSockets, team collaboration features, and advanced filtering options. Integrated with third-party APIs for enhanced productivity.",
+      "A simple to-do app enabling users to add, edit, update, and delete tasks. Built with HTML, CSS, JavaScript, and Webpack, it offers essential CRUD functionality in a clean interface. Perfect for learning core web development.",
     technologies: ["HTML", "CSS", "JavaScript", "Webpack"],
     image: "../src/assets/crop.png",
     liveLink: "https://derrick1451.github.io/todo-list/",
@@ -42,33 +44,18 @@ const projects = [
   },
   {
     id: 3,
-    title: "Task Management App",
+    title: "Math-Magician",
     category: "Frontend Development",
-    description: "Collaborative task management tool with real-time updates",
+    description: "math-magician is a single page app made with react thats helps a user to make simple calculation with the calculator and also display random quotes.",
     longDescription:
-      "Developed a collaborative task management application with drag-and-drop functionality, real-time updates using WebSockets, team collaboration features, and advanced filtering options. Integrated with third-party APIs for enhanced productivity.",
-    technologies: ["React", "TypeScript", "Socket.io", "Firebase"],
-    image: "/path-to-image.jpg",
-    liveLink: "https://project-demo.com",
-    githubLink: "https://github.com/username/project",
+      "Math Magician is a React-powered SPA featuring a calculator for basic arithmetic and a random quote generator, blending utility with inspiration in one minimalist interface.Developed a collaborative task management application with drag-and-drop functionality, real-time updates using WebSockets, team collaboration features, and advanced filtering options. Integrated with third-party APIs for enhanced productivity.",
+    technologies: ["React", "CSS", "JavaScript", "React Router"],
+    image: "../src/assets/cal.png",
+    liveLink: "https://math-magician-7wfm.onrender.com/",
+    githubLink: "https://github.com/derrick1451/math-magician",
     featured: false,
     status: "Completed",
-    duration: "2 months",
-  },
-  {
-    id: 4,
-    title: "Task Management App",
-    category: "Frontend Development",
-    description: "Collaborative task management tool with real-time updates",
-    longDescription:
-      "Developed a collaborative task management application with drag-and-drop functionality, real-time updates using WebSockets, team collaboration features, and advanced filtering options. Integrated with third-party APIs for enhanced productivity.",
-    technologies: ["React", "TypeScript", "Socket.io", "Firebase"],
-    image: "/path-to-image.jpg",
-    liveLink: "https://project-demo.com",
-    githubLink: "https://github.com/username/project",
-    featured: false,
-    status: "Completed",
-    duration: "2 months",
+    duration: "1 months",
   },
   {
     id: 5,
@@ -78,7 +65,7 @@ const projects = [
     longDescription:
       "Developed a collaborative task management application with drag-and-drop functionality, real-time updates using WebSockets, team collaboration features, and advanced filtering options. Integrated with third-party APIs for enhanced productivity.",
     technologies: ["React", "TypeScript", "Socket.io", "Firebase"],
-    image: "/path-to-image.jpg",
+    image: "../src/assets/capstone.png",
     liveLink: "https://project-demo.com",
     githubLink: "https://github.com/username/project",
     featured: false,
