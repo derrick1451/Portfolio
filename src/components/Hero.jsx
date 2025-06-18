@@ -98,7 +98,7 @@ const Hero = () => {
                     >
                         {/* Add your hero image here */}
                         <img 
-                            src="../src/assets/developer-dark.3f07bd13.svg "
+                            src="/../src/assets/developer-dark.3f07bd13.svg "
                             alt="Hero illustration" 
                             className="w-full h-auto"
                         />
