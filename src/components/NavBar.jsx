@@ -25,12 +25,58 @@ export default function NavBar() {
         <nav className="fixed w-full bg-white dark:bg-gray-900 shadow-lg z-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
-            
-                    <div className="flex-shrink-0">
-                        <h1 className="text-2xl font-bold text-gray-800 dark:text-white">Derrick</h1>
-                    </div>
+                    {/* Animated Logo */}
+                    <motion.div 
+                        className="flex-shrink-0 cursor-pointer group"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.5 }}
+                    >
+                        <div className="relative">
+                            <motion.h1 
+                                className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent group-hover:from-purple-600 group-hover:via-blue-600 group-hover:to-purple-800 transition-all duration-300"
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{ delay: 0.2, duration: 0.5 }}
+                            >
+                                Derrick
+                                <motion.span 
+                                    className="text-sm md:text-base font-medium bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent ml-1"
+                                    initial={{ opacity: 0, y: 10 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ delay: 0.5, duration: 0.3 }}
+                                >
+                                    Tech
+                                </motion.span>
+                            </motion.h1>
+                            
+                            {/* Animated underline */}
+                            <motion.div
+                                className="absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full"
+                                initial={{ width: 0 }}
+                                animate={{ width: '100%' }}
+                                transition={{ delay: 0.8, duration: 0.5 }}
+                            />
+                            
+                            {/* Hover effect dot */}
+                            <motion.div
+                                className="absolute -top-1 -right-1 w-2 h-2 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                                animate={{ 
+                                    scale: [1, 1.2, 1],
+                                    rotate: [0, 180, 360]
+                                }}
+                                transition={{ 
+                                    duration: 2,
+                                    repeat: Infinity,
+                                    ease: "easeInOut"
+                                }}
+                            />
+                        </div>
+                    </motion.div>
 
-                
+                    {/* Desktop Menu */}
                     <div className="hidden md:block">
                         <div className="ml-10 flex items-center space-x-4">
                             {navItems.map((item) => (
@@ -51,7 +97,7 @@ export default function NavBar() {
                         </div>
                     </div>
 
-            
+                    {/* Mobile menu button */}
                     <div className="md:hidden flex items-center">
                         <button
                             onClick={() => setIsDark(!isDark)}
@@ -86,7 +132,7 @@ export default function NavBar() {
                     </div>
                 </div>
 
-            
+                {/* Mobile menu */}
                 <motion.div
                     className={`${isOpen ? 'block' : 'hidden'} md:hidden`}
                     initial={{ opacity: 0, y: -10 }}

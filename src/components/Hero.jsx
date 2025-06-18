@@ -57,7 +57,7 @@ const Hero = () => {
                             Glad to see you!
                         </motion.p>
                         <motion.p 
-                            className="mt-6 text-lg text-gray-600 dark:text-gray-400 leading-relaxed"
+                            className="mt-2 text-lg text-gray-600 dark:text-gray-400 leading-relaxed"
                             variants={itemVariants}
                         >
                             Kickstarting your vision through code. I am a certified full-stack web developer 

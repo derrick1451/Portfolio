@@ -22,7 +22,7 @@ const projects = [
     image: "../src/assets/bookstore.png",
     liveLink: "https://bookstore-hynh.onrender.com/",
     githubLink: "https://github.com/derrick1451/bookstore",
-    featured: false,
+    featured: true,
     status: "Completed",
     duration: "1 months",
   },
@@ -69,7 +69,7 @@ const projects = [
     liveLink: "https://project-demo.com",
     githubLink: "https://github.com/username/project",
     featured: false,
-    status: "Completed",
+    status: "Ongoing",
     duration: "2 months",
   },
   // Add more unique projects here
