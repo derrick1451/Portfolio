@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaMedium, FaTwitter } from "react-icons/fa";
+import heroImage from "../assets/images/developer-dark.3f07bd13.svg"; // Adjust the path as necessary
 
 const Hero = () => {
   const containerVariants = {
@@ -99,7 +100,7 @@ const Hero = () => {
           <motion.div className="hidden lg:block" variants={itemVariants}>
             {/* Add your hero image here */}
             <img
-              src="/../src/assets/images/developer-dark.3f07bd13.svg "
+              src={heroImage}
               alt="Hero illustration"
               className="w-full h-auto"
             />

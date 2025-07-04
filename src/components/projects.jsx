@@ -8,6 +8,10 @@ import {
   FaStar,
   FaTimes,
 } from "react-icons/fa";
+import bookstoreImg from "../assets/images/bookstore.png";
+import calImg from "../assets/images/cal.png";
+import capstoneImg from "../assets/images/capstone.png";
+import cropImg from "../assets/images/crop.png";
 
 const projects = [
   {
@@ -19,7 +23,7 @@ const projects = [
     longDescription:
       "The Bookstore is a CRUD web app that lets users add (title, author), delete, and view books. Built with React/Node.js (or vanilla JS with LocalStorage), it features a clean UI with optional search/sort. Scalable for auth, APIs, or databases, it's perfect for learning full-stack development.",
     technologies: ["React", "CSS", "JavaScript", "React Router"],
-    image: "../src/assets/images/bookstore.png",
+    image: bookstoreImg,
     liveLink: "https://bookstore-hynh.onrender.com/",
     githubLink: "https://github.com/derrick1451/bookstore",
     featured: true,
@@ -35,7 +39,7 @@ const projects = [
     longDescription:
       "A simple to-do app enabling users to add, edit, update, and delete tasks. Built with HTML, CSS, JavaScript, and Webpack, it offers essential CRUD functionality in a clean interface. Perfect for learning core web development.",
     technologies: ["HTML", "CSS", "JavaScript", "Webpack"],
-    image: "../src/assets/images/crop.png",
+    image: cropImg,
     liveLink: "https://derrick1451.github.io/todo-list/",
     githubLink: "https://github.com/derrick1451/todo-list",
     featured: false,
@@ -51,7 +55,7 @@ const projects = [
     longDescription:
       "Math Magician is a React-powered SPA featuring a calculator for basic arithmetic and a random quote generator, blending utility with inspiration in one minimalist interface.Developed a collaborative task management application with drag-and-drop functionality, real-time updates using WebSockets, team collaboration features, and advanced filtering options. Integrated with third-party APIs for enhanced productivity.",
     technologies: ["React", "CSS", "JavaScript", "React Router"],
-    image: "../src/assets/images/cal.png",
+    image: calImg,
     liveLink: "https://math-magician-7wfm.onrender.com/",
     githubLink: "https://github.com/derrick1451/math-magician",
     featured: false,
@@ -66,7 +70,7 @@ const projects = [
     longDescription:
       "Developed a collaborative task management application with drag-and-drop functionality, real-time updates using WebSockets, team collaboration features, and advanced filtering options. Integrated with third-party APIs for enhanced productivity.",
     technologies: ["React", "TypeScript", "Socket.io", "Firebase"],
-    image: "../src/assets/images/capstone.png",
+    image: capstoneImg,
     liveLink: "https://project-demo.com",
     githubLink: "https://github.com/username/project",
     featured: false,
