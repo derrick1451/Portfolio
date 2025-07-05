@@ -9,10 +9,10 @@ import {
   FaTimes,
 } from "react-icons/fa";
 import bookstoreImg from "../assets/images/bookstore.png";
+import budgetapp from "../assets/images/budgetapp.png";
 import calImg from "../assets/images/cal.png";
 import capstoneImg from "../assets/images/capstone.png";
 import cropImg from "../assets/images/crop.png";
-
 const projects = [
   {
     id: 1,
@@ -76,6 +76,21 @@ const projects = [
     featured: false,
     status: "Ongoing",
     duration: "2 months",
+  },
+  {
+    id: 6,
+    title: "Budget Tracker",
+    category: "Full-Stack Development",
+    description: "Track your expenses and manage your budget effectively",
+    longDescription:
+      "A full-stack budget tracker that allows users to track their expenses, set budgets, and visualize their financial health. Built with Ruby on Rails.",
+    technologies: ["Ruby", "Ruby on Rails", "Postgres"],
+    image: budgetapp,
+    liveLink: "https://budget-app-jnhx.onrender.com/",
+    githubLink: "https://github.com/derrick1451/Budget_app",
+    featured: true,
+    status: "Completed",
+    duration: "1 months",
   },
   // Add more unique projects here
 ];
