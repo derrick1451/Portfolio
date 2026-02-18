@@ -86,7 +86,7 @@ const Contact = () => {
         {
             icon: <FaPhone />,
             title: 'Phone',
-            detail: '+256 778107033',
+            detail: '+256 758642938',
 
         },
     ];
